@@ -1,1 +1,1151 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वाढदिवसाच्या हार्दिक शुभेच्छा, विजय | Celebrating 25+ Years</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts with High Quality Devanagari Support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Yatra+One&family=Rozha+One&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                        marathi: ['Noto Sans Devanagari', 'sans-serif'],
+                        marathiHead: ['Yatra One', 'serif'],
+                        decorative: ['Rozha One', 'serif'],
+                    },
+                    colors: {
+                        gold: {
+                            50: '#fdfbf7',
+                            100: '#fbf7ed',
+                            200: '#f4eada',
+                            300: '#ebd8bd',
+                            400: '#dfbe97',
+                            500: '#d29f6d',
+                            600: '#c5834e',
+                            700: '#b16a3a',
+                            800: '#905331',
+                            900: '#75432a',
+                            DEFAULT: '#D4AF37'
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out infinite 3s',
+                        'spin-slow': 'spin 12s linear infinite',
+                        'shimmer': 'shimmer 2.5s linear infinite',
+                        'shake': 'shake 0.5s ease-in-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-15px) rotate(2deg)' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-200% 0' },
+                            '100%': { backgroundPosition: '200% 0' }
+                        },
+                        shake: {
+                            '0%, 100%': { transform: 'translateX(0)' },
+                            '20%, 60%': { transform: 'translateX(-10px)' },
+                            '40%, 80%': { transform: 'translateX(10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050711;
+            color: #f3f4f6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        /* Lock scroll while quiz is active */
+        body.locked {
+            overflow: hidden;
+            height: 100vh;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #060814;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f4eada;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+        }
+        .border-glow {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+            transition: all 0.3s ease;
+        }
+        .border-glow:hover {
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+        .glass {
+            background: rgba(10, 15, 36, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .glass-premium {
+            background: linear-gradient(135deg, rgba(20, 25, 55, 0.8) 0%, rgba(5, 7, 20, 0.95) 100%);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+        /* Custom typing cursor */
+        .cursor-blink::after {
+            content: '|';
+            animation: blink 0.8s step-end infinite;
+            color: #D4AF37;
+            font-weight: bold;
+        }
+        @keyframes blink {
+            from, to { color: transparent }
+            50% { color: #D4AF37; }
+        }
+        /* Animated gradient text */
+        .shimmer-text {
+            background: linear-gradient(to right, #dfbe97 20%, #D4AF37 40%, #f4eada 60%, #dfbe97 80%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shimmer 4s linear infinite;
+        }
+        /* Custom pulse for the answer field */
+        .gold-pulse-ring {
+            box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+            animation: pulse-gold-ring 2s infinite;
+        }
+        @keyframes pulse-gold-ring {
+            0% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased locked">
 
+    <!-- Interactive Particle Background Canvas -->
+    <canvas id="particleCanvas" class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-auto"></canvas>
+
+    <!-- Interactive Typing Question Pop-up Modal (Locks the Site) -->
+    <div id="quizModal" class="fixed inset-0 z-50 flex items-center justify-center bg-[#03040b]/98 p-4 transition-all duration-700 backdrop-blur-2xl">
+        <!-- Floating Ambient Glows inside Modal -->
+        <div class="absolute w-[350px] h-[350px] bg-gold-500/10 rounded-full blur-3xl top-10 left-10 animate-pulse"></div>
+        <div class="absolute w-[350px] h-[350px] bg-blue-500/5 rounded-full blur-3xl bottom-10 right-10 animate-pulse-slow"></div>
+
+        <div id="quizCard" class="glass-premium p-8 md:p-12 rounded-3xl max-w-xl w-full border-2 border-gold/30 text-center transform scale-100 transition-all duration-500 relative overflow-hidden shadow-2xl shadow-gold/20">
+            <div class="absolute -top-12 -left-12 w-32 h-32 bg-gold-500/10 rounded-full blur-2xl"></div>
+
+            <div class="inline-flex p-4 rounded-full bg-gold-500/10 text-gold-400 mb-6 border border-gold-500/20 animate-float">
+                <i data-lucide="key-round" class="w-10 h-10"></i>
+            </div>
+
+            <h2 class="font-marathiHead text-3xl md:text-4xl text-gold mb-3 text-glow">मैत्रीची सुवर्ण परीक्षा!</h2>
+            <p class="text-gray-300 text-sm md:text-base mb-8 font-marathi font-light leading-relaxed">
+                विजय, आपला हा सुंदर प्रवास पाहण्यासाठी खाली विचारलेल्या प्रश्नाचे अचूक उत्तर टाईप कर...
+            </p>
+
+            <!-- Typing Question Block -->
+            <div class="bg-slate-950/80 p-6 rounded-2xl border border-gold-500/20 mb-6">
+                <p class="font-marathi text-sm text-gold-400 uppercase tracking-widest font-semibold mb-1">प्रश्न:</p>
+                <p class="font-marathi text-xl md:text-2xl text-white text-glow font-bold leading-relaxed">
+                    "आपण किती वर्षांपासून एकमेकांचे जिवाभावाचे मित्र आहोत?"
+                </p>
+            </div>
+
+            <!-- Text Input & Submit -->
+            <div class="space-y-4 max-w-md mx-auto">
+                <div class="relative">
+                    <input type="text" id="quizInput" placeholder="उत्तर येथे लिही (उदा. २५)" 
+                        onkeydown="if(event.key === 'Enter') checkTypedAnswer()"
+                        class="w-full bg-slate-900/80 border-2 border-gold-500/40 rounded-xl py-4 px-4 text-center text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gold-500/80 focus:border-transparent font-marathi tracking-wide transition-all text-xl gold-pulse-ring">
+                    <div class="absolute right-4 top-1/2 -translate-y-1/2 text-gold-500/40">
+                        <i data-lucide="pencil" class="w-5 h-5"></i>
+                    </div>
+                </div>
+                
+                <button onclick="checkTypedAnswer()" class="w-full bg-gradient-to-r from-gold-600 via-gold-500 to-gold-700 text-slate-950 font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-gold-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 tracking-wider uppercase text-base font-marathi border-none flex items-center justify-center gap-2">
+                    <i data-lucide="unlock" class="w-5 h-5 text-slate-950"></i> अनलॉक कर (Unlock)
+                </button>
+            </div>
+
+            <!-- Feedback Message Bar -->
+            <div id="quizFeedback" class="mt-6 font-marathi text-sm font-medium transition-all duration-300 opacity-0 h-8 flex items-center justify-center">
+                <!-- Message changes dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="py-6 px-6 md:px-12 flex justify-between items-center relative z-40 max-w-7xl mx-auto">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg glass border border-gold-500/30 flex items-center justify-center animate-pulse-slow">
+                <span class="font-serif text-gold font-bold text-xl">25</span>
+            </div>
+            <span class="font-serif tracking-widest text-xs uppercase text-gold-300 hidden sm:inline-block">Brotherhood Eternal</span>
+        </div>
+        <div class="glass px-6 py-2 rounded-full flex gap-6 text-sm text-gray-300 border-glow font-marathi">
+            <a href="#about" class="hover:text-gold transition-colors">प्रवास</a>
+            <a href="#song-section" class="hover:text-gold transition-colors">गाणे</a>
+            <a href="#stats" class="hover:text-gold transition-colors">मैत्री</a>
+            <a href="#letter" class="hover:text-gold transition-colors">पत्र</a>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section class="min-h-[85vh] flex flex-col justify-center items-center text-center px-4 relative z-10 pt-10 pb-20">
+        <!-- Golden Aura Effects -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] md:w-[600px] h-[350px] md:h-[600px] bg-gradient-to-r from-gold-500/10 to-transparent rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+        <div class="space-y-6 max-w-4xl mx-auto px-4">
+            <!-- Crown/Banner -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-gold-500/30 text-gold-400 text-xs tracking-widest uppercase font-semibold animate-pulse-slow font-marathi">
+                <i data-lucide="sparkles" class="w-4 h-4 text-gold"></i>
+                Est. 2001 &bull; २५ वर्षांहून अधिक काळ सोबती
+            </div>
+
+            <!-- Main Heading with Vijay's Name -->
+            <h1 class="font-serif text-5xl md:text-8xl font-black text-white tracking-tight leading-none">
+                HAPPY BIRTHDAY, <br>
+                <span id="friendNameHero" class="shimmer-text text-glow inline-block py-2">VIJAY</span>!
+            </h1>
+
+            <!-- Catchy emotional hook -->
+            <p class="font-marathi text-lg md:text-2xl text-gold-300/90 italic font-light max-w-2xl mx-auto leading-relaxed">
+                "आज आपण अशा माणसाचा वाढदिवस साजरा करत आहोत जो २५ वर्षांहून अधिक काळ माझ्या प्रत्येक सुख-दुःखात खंबीरपणे पाठीशी उभा राहिला."
+            </p>
+
+            <!-- Important Date Badge -->
+            <div class="flex items-center justify-center gap-3 py-4">
+                <div class="h-[1px] w-12 bg-gradient-to-r from-transparent to-gold-400"></div>
+                <p class="font-marathi text-gold tracking-widest text-sm md:text-base font-semibold">१५ जून &bull; आजचा सुवर्णदिन</p>
+                <div class="h-[1px] w-12 bg-gradient-to-l from-transparent to-gold-400"></div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4 font-marathi">
+                <a href="#song-section" class="px-8 py-4 rounded-xl bg-gradient-to-r from-gold-600 to-gold-400 text-slate-950 font-bold shadow-lg hover:shadow-gold-500/20 hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center tracking-wider text-sm uppercase flex items-center justify-center gap-2">
+                    <i data-lucide="music" class="w-4 h-4 animate-bounce"></i> वाढदिवसाचे गाणे ऐका
+                </a>
+                <a href="#letter" class="px-8 py-4 rounded-xl glass text-white font-semibold hover:bg-gold-500/10 hover:text-gold transition-all w-full sm:w-auto text-center tracking-wider text-sm border border-gold-500/20 flex items-center justify-center gap-2">
+                    <i data-lucide="mail-open" class="w-4 h-4 animate-pulse"></i> खास पत्र उघडा
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500 font-marathi">
+            <span class="text-xs uppercase tracking-widest text-gold-400/60 font-semibold">खाली स्क्रोल कर</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 animate-bounce text-gold-400"></i>
+        </div>
+    </section>
+
+    <!-- Marathi Birthday Song Player Section -->
+    <section id="song-section" class="py-20 px-6 relative z-10 max-w-5xl mx-auto font-marathi">
+        <div class="text-center mb-12">
+            <span class="text-gold tracking-widest text-xs uppercase font-semibold">Special Audio Tribute</span>
+            <h2 class="font-marathiHead text-3xl md:text-5xl text-white mt-2 mb-4">विजयसाठी खास वाढदिवसाचे गाणे</h2>
+            <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="glass-premium rounded-3xl p-6 md:p-10 border-glow grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gold-500/5 rounded-full blur-2xl"></div>
+            
+            <!-- Custom Music Controller / Deck -->
+            <div class="lg:col-span-5 flex flex-col items-center justify-center text-center p-6 bg-slate-950/60 rounded-2xl border border-gold-500/20">
+                <div class="relative w-40 h-40 mb-6 flex items-center justify-center">
+                    <!-- Spinning Gold Vinyl Record -->
+                    <div id="vinylRecord" class="absolute inset-0 rounded-full border-4 border-gold-600/40 bg-gradient-to-r from-slate-900 via-slate-950 to-slate-900 flex items-center justify-center shadow-2xl">
+                        <div class="w-12 h-12 rounded-full bg-gold-500 border border-slate-950 flex items-center justify-center shadow-md">
+                            <span class="font-serif text-slate-950 font-bold text-xs">VIJAY</span>
+                        </div>
+                    </div>
+                    <!-- Stylized audio waves active indicator -->
+                    <div id="waveContainer" class="absolute -bottom-2 flex items-end gap-1.5 h-10 opacity-0 transition-opacity duration-300">
+                        <span class="w-1 bg-gold h-5 rounded-full animate-bounce"></span>
+                        <span class="w-1 bg-gold-300 h-9 rounded-full animate-bounce" style="animation-delay: 0.15s"></span>
+                        <span class="w-1 bg-gold h-7 rounded-full animate-bounce" style="animation-delay: 0.3s"></span>
+                        <span class="w-1 bg-gold-400 h-10 rounded-full animate-bounce" style="animation-delay: 0.45s"></span>
+                        <span class="w-1 bg-gold h-4 rounded-full animate-bounce" style="animation-delay: 0.6s"></span>
+                    </div>
+                </div>
+
+                <p class="text-sm text-gold uppercase tracking-widest font-semibold mb-1">म्युझिक प्लेयर</p>
+                <h3 class="font-serif text-xl text-white font-bold mb-4">विजयचा बर्थडे ट्यून</h3>
+
+                <!-- Music Action Controls -->
+                <div class="flex items-center gap-4">
+                    <button id="retroStopBtn" onclick="stopHappyBirthdayTune()" class="w-12 h-12 rounded-full bg-slate-900 border border-gold-500/30 text-gray-400 hover:text-white flex items-center justify-center transition-all disabled:opacity-50" disabled>
+                        <i data-lucide="square" class="w-5 h-5"></i>
+                    </button>
+                    <button id="retroPlayBtn" onclick="playHappyBirthdayTune()" class="w-16 h-16 rounded-full bg-gradient-to-r from-gold-600 to-gold-400 hover:scale-105 active:scale-95 text-slate-950 font-bold flex items-center justify-center transition-all shadow-lg shadow-gold-500/20">
+                        <i data-lucide="play" class="w-7 h-7 fill-slate-950" id="playIconState"></i>
+                    </button>
+                </div>
+                <p class="text-[10px] text-gray-500 mt-4 italic">चिठ्ठीसारखे सोनेरी संगीत ऐकण्यासाठी वरचे बटण दाबा</p>
+            </div>
+
+            <!-- Marathi Lyrics Board -->
+            <div class="lg:col-span-7 flex flex-col justify-center space-y-6">
+                <div class="border-l-2 border-gold pl-6">
+                    <span class="text-xs uppercase tracking-widest text-gold font-bold">वाढदिवसाचे सुरेल बोल (Lyrics)</span>
+                    <h4 class="font-marathi text-2xl md:text-3xl text-white mt-1">वर्षाव सुखाचा अखंड व्हावा...</h4>
+                </div>
+                
+                <div class="space-y-4 text-gray-300 font-display italic text-base md:text-lg leading-relaxed bg-slate-900/30 p-6 rounded-2xl border border-white/5">
+                    <p class="text-gold font-serif not-italic tracking-wide font-semibold text-sm">ध्रुवपद:</p>
+                    <p class="font-marathi not-italic text-white">
+                        "सोन्यासारख्या विजय भाऊला, वाढदिवसाच्या शुभेच्छा! <br>
+                        तुझ्या आयुष्यात सुखाचा, वर्षाव अखंड होऊ दे!"
+                    </p>
+                    <p class="font-marathi not-italic text-white/90">
+                        "पंचवीस वर्षांची ही अतूट मैत्री आपली, <br>
+                        आज सोन्याच्या या क्षणी अधिक घट्ट झाली! <br>
+                        जगातील प्रत्येक सुख तुला लाभू दे माझ्या भावा, <br>
+                        नवा उत्साह, नवा हसू तुझा प्रत्येक दिवस नवा!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Brotherhood Counter Section -->
+    <section id="stats" class="py-20 px-6 relative z-10 max-w-7xl mx-auto font-marathi">
+        <div class="text-center mb-16">
+            <h2 class="font-marathiHead text-3xl md:text-5xl text-white mb-4">आपल्या मैत्रीचे अमूल्य क्षण</h2>
+            <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full mb-4"></div>
+            <p class="text-gray-400 max-w-xl mx-auto text-base">
+                खऱ्या मैत्रीची मोजणी वर्षांवरून नाही, तर आपण एकत्र अनुभवलेल्या आनंदाच्या क्षणांवर, हास्यावर आणि अथांग विश्वासावर होते.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Years Counter -->
+            <div class="glass-premium p-6 md:p-8 rounded-2xl text-center border-glow flex flex-col justify-center items-center group hover:scale-[1.03] transition-all duration-300">
+                <div class="w-12 h-12 bg-gold-500/10 rounded-xl flex items-center justify-center text-gold mb-4 border border-gold-500/20 group-hover:bg-gold-500/20 transition-all">
+                    <i data-lucide="calendar" class="group-hover:rotate-12 transition-transform"></i>
+                </div>
+                <div class="text-3xl md:text-5xl font-serif font-bold text-gold mb-2 tracking-tight text-glow" id="countYears">२५+</div>
+                <p class="text-xs md:text-sm text-gray-400 uppercase tracking-widest font-semibold">वर्षांची अतूट मैत्री</p>
+            </div>
+
+            <!-- Months Counter -->
+            <div class="glass-premium p-6 md:p-8 rounded-2xl text-center border-glow flex flex-col justify-center items-center group hover:scale-[1.03] transition-all duration-300">
+                <div class="w-12 h-12 bg-gold-500/10 rounded-xl flex items-center justify-center text-gold mb-4 border border-gold-500/20 group-hover:bg-gold-500/20 transition-all">
+                    <i data-lucide="hourglass" class="group-hover:rotate-12 transition-transform"></i>
+                </div>
+                <div class="text-3xl md:text-5xl font-serif font-bold text-gold mb-2 tracking-tight text-glow" id="countMonths">३००+</div>
+                <p class="text-xs md:text-sm text-gray-400 uppercase tracking-widest font-semibold">महिन्यांची अखंड सोबत</p>
+            </div>
+
+            <!-- Days Counter -->
+            <div class="glass-premium p-6 md:p-8 rounded-2xl text-center border-glow flex flex-col justify-center items-center group hover:scale-[1.03] transition-all duration-300">
+                <div class="w-12 h-12 bg-gold-500/10 rounded-xl flex items-center justify-center text-gold mb-4 border border-gold-500/20 group-hover:bg-gold-500/20 transition-all">
+                    <i data-lucide="sun" class="group-hover:scale-110 transition-transform"></i>
+                </div>
+                <div class="text-3xl md:text-5xl font-serif font-bold text-gold mb-2 tracking-tight text-glow" id="countDays">९,१३१+</div>
+                <p class="text-xs md:text-sm text-gray-400 uppercase tracking-widest font-semibold">दिवसांची घट्ट साथ</p>
+            </div>
+
+            <!-- Seconds Counter (Live ticking) -->
+            <div class="glass-premium p-6 md:p-8 rounded-2xl text-center border-glow flex flex-col justify-center items-center group hover:scale-[1.03] transition-all duration-300 col-span-2 lg:col-span-1">
+                <div class="w-12 h-12 bg-gold-500/10 rounded-xl flex items-center justify-center text-gold mb-4 border border-gold-500/20 group-hover:bg-gold-500/20 transition-all">
+                    <i data-lucide="clock" class="animate-spin-slow"></i>
+                </div>
+                <div class="text-2xl md:text-4xl font-mono font-bold text-white mb-2 tracking-wide" id="liveSeconds">788,940,000</div>
+                <p class="text-xs md:text-sm text-gray-400 uppercase tracking-widest font-semibold">सेकंद आणि सोबत सतत सुरू...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Memory Lane (Timeline) -->
+    <section id="about" class="py-20 px-6 relative z-10 bg-slate-950/40 border-y border-gold-500/10 font-marathi">
+        <div class="absolute top-1/2 left-0 w-80 h-80 bg-gold-600/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-20">
+                <span class="text-gold tracking-widest text-xs uppercase font-semibold">आपल्या आठवणींचे सुंदर कप्पे</span>
+                <h2 class="font-marathiHead text-3xl md:text-5xl text-white mt-2 mb-4">मैत्रीची सुवर्ण पाने</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-400 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
+                    लहानपणीच्या दंगामस्तीपासून ते आजच्या व्यावहारिक जगापर्यंत, आपण प्रत्येक पाऊल नेहमी एकत्र आणि खंबीरपणे टाकलं आहे.
+                </p>
+            </div>
+
+            <div class="relative border-l border-gold-500/30 ml-4 md:ml-32 pl-8 md:pl-16 space-y-16">
+                <!-- Chapter 1 -->
+                <div class="relative group">
+                    <div class="absolute -left-[45px] md:-left-[77px] top-1.5 w-8 h-8 rounded-full glass border border-gold-500 flex items-center justify-center text-gold group-hover:bg-gold-500 group-hover:text-slate-950 transition-all duration-300 shadow-lg group-hover:shadow-gold-500/50">
+                        <i data-lucide="toy-brick" class="w-4 h-4"></i>
+                    </div>
+                    <div class="absolute -left-36 top-2 hidden md:block w-24 text-right">
+                        <span class="font-serif text-gold-400 font-bold text-lg">प्रकरण १</span>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider">बालपण</p>
+                    </div>
+                    <div class="glass-premium p-6 md:p-8 rounded-2xl border-glow transition-all duration-300 hover:translate-x-2">
+                        <span class="text-xs font-semibold text-gold uppercase tracking-widest">बालपण &bull; १९९० चे दशक</span>
+                        <h3 class="font-marathi text-2xl text-white mt-2 mb-3">थोडं हसणं, थोडी मस्ती अन् अथांग प्रेम</h3>
+                        <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                            जेव्हा आपल्याला जगाची फारशी समज नव्हती, तेव्हापासून आपण एकमेकांचे पाठीराखे होतो. खेळणी वाटून घेण्यापासून ते ती तोडण्यापर्यंत, मातीत खेळण्यापासून ते बालपणीचे किल्ले उभारण्यापर्यंत, आपल्या या घट्ट मैत्रीचा पाया आपण तिथेच रचला.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chapter 2 -->
+                <div class="relative group">
+                    <div class="absolute -left-[45px] md:-left-[77px] top-1.5 w-8 h-8 rounded-full glass border border-gold-500 flex items-center justify-center text-gold group-hover:bg-gold-500 group-hover:text-slate-950 transition-all duration-300 shadow-lg group-hover:shadow-gold-500/50">
+                        <i data-lucide="gamepad-2" class="w-4 h-4"></i>
+                    </div>
+                    <div class="absolute -left-36 top-2 hidden md:block w-24 text-right">
+                        <span class="font-serif text-gold-400 font-bold text-lg">प्रकरण २</span>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider">तारुण्य</p>
+                    </div>
+                    <div class="glass-premium p-6 md:p-8 rounded-2xl border-glow transition-all duration-300 hover:translate-x-2">
+                        <span class="text-xs font-semibold text-gold uppercase tracking-widest">२००० चे दशक &bull; तारुण्य</span>
+                        <h3 class="font-marathi text-2xl text-white mt-2 mb-3">अमर्याद दंगा आणि स्वप्नांचे पंख</h3>
+                        <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                            रात्रीच्या वेळी एकत्र व्हिडिओ गेम्स खेळणे, घरच्यांपासून लपवलेली आपली गुपिते, आणि भविष्यात काय करायचे याबद्दल मारलेल्या गप्पा... आपल्या त्या उमेदीच्या काळात आपण नेहमी एकमेकांच्या पाठीशी खंबीरपणे उभे राहिलो.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chapter 3 -->
+                <div class="relative group">
+                    <div class="absolute -left-[45px] md:-left-[77px] top-1.5 w-8 h-8 rounded-full glass border border-gold-500 flex items-center justify-center text-gold group-hover:bg-gold-500 group-hover:text-slate-950 transition-all duration-300 shadow-lg group-hover:shadow-gold-500/50">
+                        <i data-lucide="compass" class="w-4 h-4"></i>
+                    </div>
+                    <div class="absolute -left-36 top-2 hidden md:block w-24 text-right">
+                        <span class="font-serif text-gold-400 font-bold text-lg">प्रकरण ३</span>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider">प्रौढत्व</p>
+                    </div>
+                    <div class="glass-premium p-6 md:p-8 rounded-2xl border-glow transition-all duration-300 hover:translate-x-2">
+                        <span class="text-xs font-semibold text-gold uppercase tracking-widest">२०१० ते आतापर्यंत &bull; व्यावहारिक जग</span>
+                        <h3 class="font-marathi text-2xl text-white mt-2 mb-3">आयुष्याची आव्हाने, तोच घट्ट आधार</h3>
+                        <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                            नोकरी, नाती, वेगवेगळ्या जबाबदाऱ्या आणि आयुष्यात आलेली वादळे... अनेक मित्र काळाच्या ओघात हरवून गेले, पण आपलं नातं कधीच बदललं नाही. अंतर कितीही असलं तरी आपली मैत्री काळालाही पुरून उरली आहे, हे आपण सिद्ध केलं.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chapter 4 -->
+                <div class="relative group">
+                    <div class="absolute -left-[45px] md:-left-[77px] top-1.5 w-8 h-8 rounded-full glass border border-gold-500/80 flex items-center justify-center text-gold group-hover:bg-gold-500 group-hover:text-slate-950 transition-all duration-300 animate-pulse shadow-lg group-hover:shadow-gold-500/50">
+                        <i data-lucide="trophy" class="w-4 h-4"></i>
+                    </div>
+                    <div class="absolute -left-36 top-2 hidden md:block w-24 text-right">
+                        <span class="font-serif text-gold-400 font-bold text-lg">आजचा दिवस</span>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider">अनंत</p>
+                    </div>
+                    <div class="glass-premium p-6 md:p-8 rounded-2xl border border-gold-500/40 border-glow transition-all duration-300 hover:translate-x-2 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gold/15 text-gold text-[10px] px-3 py-1 font-semibold tracking-wider rounded-bl-xl uppercase animate-pulse">ACTIVE CHRONICLE</div>
+                        <span class="text-xs font-semibold text-gold-400 uppercase tracking-widest">१५ जून २०२६ &bull; वाढदिवस</span>
+                        <h3 class="font-marathi text-2xl text-white mt-2 mb-3 text-glow">विजयचा गौरवशाली प्रवास</h3>
+                        <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                            आणि आज आपण या टप्प्यावर उभे आहोत. वयाने थोडे मोठे झालो असू, पण मनातील ती निरागस आणि खोडकर मैत्री आजही तशीच ताजी आहे. विजय, तुला माझ्याइतके जवळून आणि चांगलं कोणीच समजू शकत नाही. वाढदिवसाच्या अनंत शुभेच्छा माझ्या भावा! पुढील २५ वर्षे अशीच एकत्र गाजवायची आहेत!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Polaroid Memories Card Deck -->
+    <section class="py-20 px-6 max-w-7xl mx-auto relative z-10 font-marathi">
+        <div class="text-center mb-16">
+            <h2 class="font-marathiHead text-3xl md:text-5xl text-white mb-4">मैत्रीचे सुवर्ण नियम</h2>
+            <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full mb-4"></div>
+            <p class="text-gray-400 max-w-xl mx-auto">
+                आपण जगात कुठेही गेलो तरी आपली मैत्री नेहमीच अशीच अतूट आणि अभेद्य राहील.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Polaroid 1 -->
+            <div class="bg-[#faf6eb] text-slate-950 p-5 rounded-md shadow-2xl rotate-[-2deg] hover:rotate-0 hover:scale-105 hover:shadow-gold-500/10 transition-all duration-500 group cursor-pointer border border-neutral-300">
+                <div class="w-full aspect-[4/3] bg-slate-900 mb-4 rounded relative overflow-hidden flex items-center justify-center p-6 text-center text-white select-none">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-slate-950 via-slate-900 to-slate-800 opacity-90"></div>
+                    <div class="relative z-10">
+                        <i data-lucide="shield" class="w-12 h-12 text-gold mx-auto mb-2 animate-float"></i>
+                        <h4 class="font-serif text-lg text-gold-300 uppercase tracking-widest">अतूट विश्वास</h4>
+                    </div>
+                </div>
+                <div class="font-marathi text-lg text-center font-bold text-slate-800 italic mt-2 leading-relaxed">
+                    "कोणताही प्रश्न न विचारता सदैव पाठीशी उभा राहणारा..."
+                </div>
+                <p class="text-xs text-center text-slate-500 font-sans mt-2 tracking-wide font-medium">Memory Ref: 001/Vijay</p>
+            </div>
+
+            <!-- Polaroid 2 -->
+            <div class="bg-[#faf6eb] text-slate-950 p-5 rounded-md shadow-2xl rotate-[3deg] hover:rotate-0 hover:scale-105 hover:shadow-gold-500/10 transition-all duration-500 group cursor-pointer border border-neutral-300">
+                <div class="w-full aspect-[4/3] bg-slate-900 mb-4 rounded relative overflow-hidden flex items-center justify-center p-6 text-center text-white select-none">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-slate-950 via-slate-900 to-slate-800 opacity-90"></div>
+                    <div class="relative z-10">
+                        <i data-lucide="flame" class="w-12 h-12 text-gold mx-auto mb-2 animate-float-delayed"></i>
+                        <h4 class="font-serif text-lg text-gold-300 uppercase tracking-widest">धमाल मस्ती</h4>
+                    </div>
+                </div>
+                <div class="font-marathi text-lg text-center font-bold text-slate-800 italic mt-2 leading-relaxed">
+                    "आपल्या आयुष्यातील सर्वात भारी आठवणी आपल्या खोडसाळपणातूनच बनल्या."
+                </div>
+                <p class="text-xs text-center text-slate-500 font-sans mt-2 tracking-wide font-medium">Memory Ref: 042/Vijay</p>
+            </div>
+
+            <!-- Polaroid 3 -->
+            <div class="bg-[#faf6eb] text-slate-950 p-5 rounded-md shadow-2xl rotate-[-1deg] hover:rotate-0 hover:scale-105 hover:shadow-gold-500/10 transition-all duration-500 group cursor-pointer border border-neutral-300">
+                <div class="w-full aspect-[4/3] bg-slate-900 mb-4 rounded relative overflow-hidden flex items-center justify-center p-6 text-center text-white select-none">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-slate-950 via-slate-900 to-slate-800 opacity-90"></div>
+                    <div class="relative z-10">
+                        <i data-lucide="sunset" class="w-12 h-12 text-gold mx-auto mb-2 animate-float"></i>
+                        <h4 class="font-serif text-lg text-gold-300 uppercase tracking-widest">सुख-दुःखात सोबती</h4>
+                    </div>
+                </div>
+                <div class="font-marathi text-lg text-center font-bold text-slate-800 italic mt-2 leading-relaxed">
+                    "वय बदललं तरी आपलं मन आणि आपली मैत्री आजही तीच आहे."
+                </div>
+                <p class="text-xs text-center text-slate-500 font-sans mt-2 tracking-wide font-medium">Memory Ref: 099/Vijay</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive: Raise a Virtual Toast (Confetti Trigger) -->
+    <section id="toast" class="py-24 px-6 relative z-10 bg-gradient-to-b from-transparent via-gold-900/10 to-transparent font-marathi">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="glass-premium p-8 md:p-12 rounded-3xl border-glow relative overflow-hidden">
+                <div class="absolute -top-12 -right-12 w-32 h-32 bg-gold-400/10 rounded-full blur-2xl"></div>
+
+                <div class="inline-flex p-4 bg-gold-500/10 rounded-full text-gold-400 border border-gold-500/20 mb-6">
+                    <i data-lucide="wine" class="w-10 h-10 animate-pulse-slow"></i>
+                </div>
+
+                <h2 class="font-marathiHead text-3xl md:text-5xl text-white mb-4">आनंदाचा एक सुवर्ण पेला</h2>
+                <p class="text-gray-300 text-sm md:text-base mb-8 max-w-xl mx-auto leading-relaxed">
+                    आजचा दिवस फक्त वाढदिवसाचा नाही, तर आपल्या २५+ वर्षांच्या घट्ट मैत्रीचा आणि अस्तित्वाचा उत्सव आहे. खालील बटणावर क्लिक कर आणि विजयसाठी शुभेच्छांचा जल्लोष कर!
+                </p>
+
+                <!-- Toast Button -->
+                <div class="relative inline-block group">
+                    <div class="absolute -inset-1 rounded-xl bg-gradient-to-r from-gold via-gold-300 to-gold-600 opacity-40 blur-md group-hover:opacity-100 transition-all duration-500 animate-pulse-slow"></div>
+                    <button onclick="raiseToast()" class="relative px-10 py-5 rounded-xl bg-gradient-to-r from-slate-900 to-slate-950 text-gold font-bold tracking-widest uppercase text-xs sm:text-sm border border-gold-500/50 flex items-center gap-3 mx-auto transition-all duration-300 active:scale-95">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-gold animate-spin-slow"></i>
+                        विजयसाठी पेला उंचाव! (Raise a Toast)
+                    </button>
+                </div>
+
+                <!-- Hidden Surprise Area (Unlocked on toast click) -->
+                <div id="secretMessage" class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-10">
+                    <div class="border-t border-gold-500/20 pt-8 max-w-lg mx-auto">
+                        <div class="text-gold font-serif text-2xl italic mb-3 leading-relaxed">"आपली मैत्री अशीच अनंत काळ टिकून राहो, आणि तुझ्या आयुष्यातील सुखाचे क्षण कधीही कमी न होवोत!"</div>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            आपण गोळा केलेल्या त्या सोनेरी आठवणी, एकत्र केलेली धमाल, सोसलेली संकटे आणि आयुष्यभर टिकणारी आपली निष्ठा! विजय, तू माझ्यासाठी फक्त एक चांगला मित्र नाहीस, तर माझा स्वतःचा भाऊ आहेस, माझं कुटुंब आहेस. वाढदिवसाच्या खूप खूप शुभेच्छा, माझ्या भावा!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Deep Heartfelt Letter Section with Interactive Typing Action -->
+    <section id="letter" class="py-20 px-6 relative z-10 max-w-4xl mx-auto font-marathi">
+        <div class="text-center mb-12">
+            <h2 class="font-marathiHead text-3xl md:text-5xl text-white mb-2">जिवाभावाचे स्नेहपत्र</h2>
+            <p class="text-gold-400 text-xs uppercase tracking-widest font-semibold mb-4">फक्त तुझ्यासाठी &bull; आपल्या २५ वर्षांच्या प्रवासाची सोन्यासारखी आठवण</p>
+            <div class="w-16 h-0.5 bg-gold-500 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Envelope / Letter Container with trigger -->
+        <div class="relative">
+            <!-- Closed Scroll State Overlay -->
+            <div id="envelopeOverlay" class="absolute inset-0 z-30 flex flex-col items-center justify-center bg-slate-950/95 border border-gold-500/40 rounded-3xl p-8 text-center transition-all duration-700 backdrop-blur-md">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-gold-500/10 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-gold-500/10 rounded-full blur-3xl"></div>
+                
+                <div class="w-24 h-24 rounded-full bg-gold-500/15 border-2 border-gold flex items-center justify-center text-gold shadow-lg shadow-gold/10 mb-6 animate-float">
+                    <i data-lucide="mail" class="w-10 h-10 animate-bounce"></i>
+                </div>
+                
+                <h3 class="font-marathiHead text-3xl text-white mb-2">विजयसाठी खास गुपित पत्र</h3>
+                <p class="text-gray-400 text-sm max-w-md mx-auto mb-8 leading-relaxed">
+                    तुझ्या वाढदिवसानिमित्त आपल्या २५ वर्षांच्या प्रवासाची काही सोनेरी पाने मी मनापासून शब्दात उतरवली आहेत. खालील बटणावर क्लिक करून वाचायला सुरुवात कर.
+                </p>
+                
+                <button onclick="startTypingLetter()" class="px-8 py-4 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-700 text-slate-950 font-bold uppercase tracking-widest text-xs sm:text-sm rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center gap-2 border-none">
+                    <i data-lucide="mail-open" class="w-4 h-4 text-slate-950"></i> पत्र उघड (Open Letter)
+                </button>
+            </div>
+
+            <!-- Letter Body inside Glass Premium scroll container -->
+            <div class="glass-premium p-8 md:p-16 rounded-3xl relative overflow-hidden shadow-2xl border-gold-500/30 min-h-[500px]">
+                <!-- Interactive Action Bar inside the Letter -->
+                <div class="absolute top-4 right-4 z-20">
+                    <button id="replayBtn" onclick="restartLetterTyping()" class="hidden text-xs text-gold hover:text-white flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-950/60 border border-gold-500/30 hover:border-gold transition-all">
+                        <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> पुन्हा वाच
+                    </button>
+                </div>
+
+                <!-- Wax Seal Emblem background styling -->
+                <div class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 z-10">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-gold-600 via-gold-400 to-gold-700 flex items-center justify-center border-4 border-[#060814] shadow-lg animate-pulse-slow">
+                        <span class="font-serif text-slate-950 font-black text-lg">२५</span>
+                    </div>
+                </div>
+
+                <!-- Letter Content Display -->
+                <div id="typedLetterBody" class="space-y-6 text-gray-200 font-display italic text-base md:text-xl leading-relaxed pt-6 cursor-blink">
+                    <!-- Typing target stream gets injected here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sophisticated Footer -->
+    <footer class="py-12 px-6 border-t border-gold-500/10 relative z-10 text-center text-sm text-gray-500 bg-slate-950/80 font-marathi">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <div class="flex justify-center gap-6 text-gold-400">
+                <div class="w-8 h-8 rounded-full glass flex items-center justify-center hover:text-white transition-colors cursor-pointer border border-gold-500/20 animate-pulse-slow">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i>
+                </div>
+                <div class="w-8 h-8 rounded-full glass flex items-center justify-center hover:text-white transition-colors cursor-pointer border border-gold-500/20">
+                    <i data-lucide="heart" class="w-4 h-4 text-red-500"></i>
+                </div>
+                <div class="w-8 h-8 rounded-full glass flex items-center justify-center hover:text-white transition-colors cursor-pointer border border-gold-500/20">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                </div>
+            </div>
+            <p class="font-serif text-gold-300">EST. 2001 &bull; विजय आणि माझी २५+ वर्षांची अतूट मैत्री</p>
+            <p class="text-xs text-gray-600">अत्यंत मनापासून तयार केलेले, आज १५ जून रोजी विजयचा आनंद साजरा करत आहोत. सर्व हक्क सुरक्षित.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Functionality, Custom Retro Audio Synthesizer & Particle System -->
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // Application State
+        const friendName = "Vijay";
+        const friendNameMarathi = "विजय";
+
+        // Pre-fill labels
+        function initPersonalization() {
+            document.getElementById('friendNameHero').textContent = friendName.toUpperCase();
+            
+            const placeholders = document.querySelectorAll('.friendNamePlaceholder');
+            placeholders.forEach(el => {
+                el.textContent = friendNameMarathi;
+            });
+        }
+
+        // Live ticking Seconds calculation of a 25-year-old friendship (starting around June 15, 2001)
+        const startDate = new Date('2001-06-15T00:00:00');
+        function updateBrotherhoodCounters() {
+            const now = new Date();
+            const diffMs = now - startDate;
+            
+            // Calculate raw values
+            const diffSeconds = Math.floor(diffMs / 1000);
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            const diffMonths = Math.floor(diffDays / 30.437);
+            const diffYears = Math.floor(diffDays / 365.25);
+
+            // Update DOM with live tick
+            document.getElementById('countYears').textContent = `${diffYears}+`;
+            document.getElementById('countMonths').textContent = `${diffMonths.toLocaleString()}+`;
+            document.getElementById('countDays').textContent = `${diffDays.toLocaleString()}+`;
+            document.getElementById('liveSeconds').textContent = diffSeconds.toLocaleString();
+        }
+        setInterval(updateBrotherhoodCounters, 1000);
+        updateBrotherhoodCounters();
+
+        // ----------------- WEB AUDIO API SYNTHESIZER FOR HAPPY BIRTHDAY -----------------
+        let audioCtx = null;
+        let synthesizerTimer = null;
+        let isSynthesizerPlaying = false;
+        let currentNoteIndex = 0;
+
+        // Happy Birthday Melody Note Frequencies (Golden Chime Settings)
+        const birthdayMelody = [
+            [261.63, 300], [261.63, 100], [293.66, 400], [261.63, 400], [349.23, 400], [329.63, 800], // Happy Birthday to you
+            [261.63, 300], [261.63, 100], [293.66, 400], [261.63, 400], [392.00, 400], [349.23, 800], // Happy Birthday to you
+            [261.63, 300], [261.63, 100], [523.25, 400], [440.00, 400], [349.23, 400], [329.63, 400], [293.66, 800], // Happy Birthday dear Vijay
+            [466.16, 300], [466.16, 100], [440.00, 400], [349.23, 400], [392.00, 400], [349.23, 800]  // Happy Birthday to you
+        ];
+
+        // Synthesize a quick golden chime for successful unlock
+        function playUnlockChime() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            const notes = [261.63, 329.63, 392.00, 523.25];
+            notes.forEach((freq, idx) => {
+                setTimeout(() => {
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.4);
+                }, idx * 100);
+            });
+        }
+
+        function playHappyBirthdayTune() {
+            if (isSynthesizerPlaying) {
+                stopHappyBirthdayTune();
+                return;
+            }
+
+            // Init Web Audio context safely
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+
+            // Reset player index
+            currentNoteIndex = 0;
+            isSynthesizerPlaying = true;
+            
+            // Update UI State
+            document.getElementById('playIconState').setAttribute('data-lucide', 'square');
+            document.getElementById('vinylRecord').classList.add('animate-spin-slow');
+            document.getElementById('waveContainer').classList.remove('opacity-0');
+            document.getElementById('retroStopBtn').disabled = false;
+            lucide.createIcons();
+
+            // Spawn celebratory confetti burst on player trigger
+            triggerConfettiBurst();
+
+            // Start playing notes
+            playNextNote();
+        }
+
+        function playNextNote() {
+            if (!isSynthesizerPlaying) return;
+
+            if (currentNoteIndex >= birthdayMelody.length) {
+                currentNoteIndex = 0;
+            }
+
+            const [frequency, duration] = birthdayMelody[currentNoteIndex];
+            playTone(frequency, duration);
+
+            // Trigger light particle waves on beats
+            for(let i=0; i < 5; i++) {
+                confetti.push(new Confetti(Math.random() * canvas.width, canvas.height - 100));
+            }
+
+            currentNoteIndex++;
+            synthesizerTimer = setTimeout(playNextNote, duration + 100);
+        }
+
+        function playTone(freq, duration) {
+            if (!audioCtx) return;
+            
+            const osc = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+
+            osc.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            osc.type = 'triangle'; 
+            osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+
+            gainNode.gain.setValueAtTime(0.2, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + (duration / 1000));
+
+            osc.start();
+            osc.stop(audioCtx.currentTime + (duration / 1000));
+        }
+
+        function stopHappyBirthdayTune() {
+            isSynthesizerPlaying = false;
+            if (synthesizerTimer) {
+                clearTimeout(synthesizerTimer);
+            }
+            
+            // Reset UI
+            document.getElementById('playIconState').setAttribute('data-lucide', 'play');
+            document.getElementById('vinylRecord').classList.remove('animate-spin-slow');
+            document.getElementById('waveContainer').classList.add('opacity-0');
+            document.getElementById('retroStopBtn').disabled = true;
+            lucide.createIcons();
+        }
+
+        // ----------------- DYNAMIC SCROLL TYPING EFFECT FOR THE LETTER -----------------
+        const marathiLetterText = `
+<p class="font-bold font-sans not-italic text-gold text-lg md:text-2xl border-b border-gold-500/20 pb-3">प्रिय विजय (माझ्या जिवाभावाच्या भावाला),</p>
+<p>असं म्हणतात की आयुष्यात जर एक जरी खरा मित्र मिळाला ना, तरी तो माणूस जगातील सर्वात श्रीमंत आणि नशीबवान व्यक्ती ठरतो. तुझ्यासारखा सोन्यासारखा मित्र आणि जिवाभावाचा भाऊ मला गेल्या <span class="text-gold font-serif font-bold">२५ वर्षांहून अधिक काळ</span> लाभला, हे माझं खूप मोठं भाग्य आहे.</p>
+<p>आपण अगदी लहान असताना, जेव्हा आपल्याला उद्याची कोणतीही काळजी नव्हती, खेळायला मिळणं हेच एकमेव ध्येय होतं, तेव्हापासून सुरू झालेला हा प्रवास आजही तितक्याच ताकदीने आणि प्रेमाने सुरू आहे.</p>
+<p>आपण एकत्र मिळून आयुष्यातील प्रत्येक चढ-उतार आणि ऋतू पाहिले आहेत. बालपणीची निष्पाप स्वप्ने, तारुण्यातील गमतीजमती, कॉलेजातील ते सोनेरी दिवस आणि आता जबाबदाऱ्यांनी वेढलेलं हे प्रौढ आयुष्य... सर्व काही आपण खांद्याला खांदा लावून एकत्र अनुभवले. काळ बदलला, परिस्थिती बदलली, कितीतरी लोक आले आणि गेले, पण आपलं नातं मात्र हिमालयासारखं अढळ राहिलं.</p>
+<p>माझ्या पाठीशी प्रत्येक कठीण प्रसंगात खंबीरपणे उभे राहिल्याबद्दल, त्या निखळ हास्यासाठी, कधीही न खटकणाऱ्या आपल्या शांत मौनासाठी आणि माझ्या यशाला स्वतःचं यश मानून जल्लोष केल्याबद्दल मी तुझा कायम ऋणी राहीन. तुझा विश्वास माझ्यासाठी अमूल्य आहे आणि आपली ही मैत्री अजोड आहे.</p>
+<p>आज या १५ जून रोजी, तुझ्या वाढदिवशी तुला एवढंच सांगायचं आहे की, भविष्य आपल्याला उद्या कोणत्याही वळणावर घेऊन जावो किंवा काळाच्या धावपळीत आपण कितीही व्यस्त होऊ, पण तुझा हा भाऊ नेहमी तुझ्यासाठी आणि तुझ्या एका हाकेला धावून येण्यासाठी सदैव तत्पर असेल.</p>
+<p class="pt-8 font-serif text-gold font-bold text-lg md:text-2xl not-italic text-glow">वाढदिवसाच्या अनंत हार्दिक शुभेच्छा, लेजंड विजय! <br><span class="text-xs md:text-sm text-gray-400 font-sans tracking-widest uppercase font-medium">पुढील २५+ वर्षांच्या अशाच सोनेरी प्रवासासाठी सज्ज होऊया!</span></p>
+        `;
+
+        let typingInterval = null;
+        
+        function startTypingLetter() {
+            // Unseal and slide away the overlay
+            const overlay = document.getElementById('envelopeOverlay');
+            overlay.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 700);
+
+            // Fire beautiful particle explosion
+            triggerConfettiBurst();
+
+            // Start typing
+            runLetterTypingEffect();
+        }
+
+        function runLetterTypingEffect() {
+            const targetContainer = document.getElementById('typedLetterBody');
+            targetContainer.innerHTML = "";
+            targetContainer.classList.add('cursor-blink');
+            
+            let currentHTML = marathiLetterText.trim();
+            let index = 0;
+            let currentOutput = "";
+
+            if (typingInterval) clearInterval(typingInterval);
+
+            const replayBtn = document.getElementById('replayBtn');
+            replayBtn.classList.add('hidden');
+
+            typingInterval = setInterval(() => {
+                if (index >= currentHTML.length) {
+                    clearInterval(typingInterval);
+                    targetContainer.classList.remove('cursor-blink');
+                    replayBtn.classList.remove('hidden');
+                    return;
+                }
+
+                // Parse HTML tags smoothly to prevent raw printing
+                if (currentHTML[index] === '<') {
+                    let tagCloseIndex = currentHTML.indexOf('>', index);
+                    if (tagCloseIndex !== -1) {
+                        currentOutput += currentHTML.substring(index, tagCloseIndex + 1);
+                        index = tagCloseIndex + 1;
+                    } else {
+                        currentOutput += currentHTML[index];
+                        index++;
+                    }
+                } else {
+                    currentOutput += currentHTML[index];
+                    index++;
+                }
+
+                targetContainer.innerHTML = currentOutput;
+                
+                if (index % 15 === 0) {
+                    confetti.push(new Confetti(
+                        canvas.width / 2 + (Math.random() * 200 - 100), 
+                        document.getElementById('letter').offsetTop + (targetContainer.offsetHeight / 2)
+                    ));
+                }
+            }, 12);
+        }
+
+        function restartLetterTyping() {
+            runLetterTypingEffect();
+            triggerConfettiBurst();
+        }
+
+        // Raise a Toast Button Trigger (Interactive Confetti)
+        function raiseToast() {
+            const secretMsg = document.getElementById('secretMessage');
+            secretMsg.classList.remove('max-h-0', 'opacity-0');
+            secretMsg.classList.add('max-h-[500px]', 'opacity-100');
+            
+            triggerConfettiBurst();
+            playHappyBirthdayTune();
+        }
+
+        // ----------------- INTERACTIVE TYPED QUIZ LOGIC -----------------
+        function checkTypedAnswer() {
+            const inputField = document.getElementById('quizInput');
+            const quizCard = document.getElementById('quizCard');
+            const rawVal = inputField.value.trim().toLowerCase();
+            const feedback = document.getElementById('quizFeedback');
+            
+            feedback.style.opacity = "100";
+
+            // Accept flexible variants: 25, २५, "पंचवीस", "25+", "25 years"
+            if (rawVal.includes('25') || rawVal.includes('२५') || rawVal.includes('पंचवीस') || rawVal.includes('पंचविस') || rawVal.includes('twenty five')) {
+                
+                // Correct Answer!
+                feedback.innerHTML = `<span class="text-emerald-400 font-bold text-lg animate-bounce">अतिशय बरोबर उत्तर, विजय! आपल्या अतूट मैत्रीची २५ हून अधिक सुवर्ण वर्षे! 🎉</span>`;
+                inputField.classList.remove('border-gold-500/40', 'gold-pulse-ring');
+                inputField.classList.add('border-emerald-500');
+                
+                // Play special chime
+                playUnlockChime();
+
+                // Trigger massive gold celebration confetti explosions
+                triggerConfettiBurst();
+                for(let i=0; i<6; i++) {
+                    setTimeout(() => { triggerConfettiBurst(); }, i * 150);
+                }
+
+                // Unlock body scrolling
+                document.body.classList.remove('locked');
+
+                // Close modal with a stunning cinematic fade
+                setTimeout(() => {
+                    const quizModal = document.getElementById('quizModal');
+                    quizModal.classList.add('opacity-0', 'scale-90', 'pointer-events-none');
+                    setTimeout(() => {
+                        quizModal.style.display = "none";
+                    }, 800);
+                }, 1800);
+
+            } else {
+                // Wrong Answer!
+                feedback.innerHTML = `<span class="text-rose-500 animate-pulse font-bold">छे विजय! आपली मैत्री एवढी नवीन नाहीये, पुन्हा एकदा व्यवस्थित आठवून लिही! 😉</span>`;
+                
+                // Red glowing border for input error
+                inputField.classList.add('border-rose-500');
+                
+                // Trigger Shake Animation
+                quizCard.classList.remove('animation-shake');
+                void quizCard.offsetWidth; // Trigger reflow to restart animation
+                quizCard.classList.add('animate-shake');
+                
+                // Light red sparkles around
+                for (let i = 0; i < 20; i++) {
+                    const item = new Confetti(window.innerWidth / 2 + (Math.random() * 100 - 50), window.innerHeight / 2);
+                    item.color = 'rgba(239, 68, 68, 1)'; // Red error sparkles
+                    confetti.push(item);
+                }
+
+                // Reset red border after 1 second
+                setTimeout(() => {
+                    inputField.classList.remove('border-rose-500');
+                    quizCard.classList.remove('animate-shake');
+                }, 1000);
+            }
+        }
+
+        // Particle Canvas Background and Physics
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let particles = [];
+        let confetti = [];
+        let mouse = { x: null, y: null };
+
+        // Handle Window resize
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+        }
+        window.addEventListener('resize', resizeCanvas);
+
+        // Track Mouse Movements
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+
+        window.addEventListener('mouseleave', () => {
+            mouse.x = null;
+            mouse.y = null;
+        });
+
+        // Interactive touches
+        window.addEventListener('touchmove', (e) => {
+            if (e.touches.length > 0) {
+                mouse.x = e.touches[0].clientX;
+                mouse.y = e.touches[0].clientY;
+            }
+        });
+
+        window.addEventListener('touchend', () => {
+            mouse.x = null;
+            mouse.y = null;
+        });
+
+        // Star Particles (Atmospheric Ambient Gold Stars)
+        class Star {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 1.8 + 0.5;
+                this.speedY = -(Math.random() * 0.4 + 0.1);
+                this.speedX = (Math.random() * 0.2 - 0.1);
+                this.color = `rgba(212, 175, 55, ${Math.random() * 0.4 + 0.2})`;
+                this.pulseSpeed = Math.random() * 0.02 + 0.005;
+                this.alpha = Math.random();
+                this.direction = 1;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = this.color.replace(/[^,]+(?=\))/, this.alpha);
+                ctx.fill();
+            }
+
+            update() {
+                this.y += this.speedY;
+                this.x += this.speedX;
+
+                if (this.y < 0) this.y = canvas.height;
+                if (this.x < 0 || this.x > canvas.width) this.x = Math.random() * canvas.width;
+
+                this.alpha += this.pulseSpeed * this.direction;
+                if (this.alpha > 0.85 || this.alpha < 0.15) {
+                    this.direction *= -1;
+                }
+
+                if (mouse.x && mouse.y) {
+                    let dx = this.x - mouse.x;
+                    let dy = this.y - mouse.y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+                    if (distance < 120) {
+                        let force = (120 - distance) / 120;
+                        this.x += (dx / distance) * force * 2;
+                        this.y += (dy / distance) * force * 2;
+                    }
+                }
+            }
+        }
+
+        // Active Celebratory Confetti Burst Particle (Triggered on Action)
+        class Confetti {
+            constructor(x, y) {
+                this.x = x || canvas.width / 2;
+                this.y = y || canvas.height / 2;
+                this.size = Math.random() * 6 + 4;
+                this.speedX = (Math.random() * 14 - 7);
+                this.speedY = (Math.random() * -14 - 4);
+                this.gravity = 0.25;
+                this.color = this.getRandomGoldColor();
+                this.alpha = 1;
+                this.decay = Math.random() * 0.015 + 0.01;
+                this.rotation = Math.random() * 360;
+                this.rotationSpeed = Math.random() * 10 - 5;
+            }
+
+            getRandomGoldColor() {
+                const colors = [
+                    'rgba(212, 175, 55, 1)',  // Metallic Gold
+                    'rgba(244, 234, 218, 1)', // Champagne
+                    'rgba(235, 216, 189, 1)', // Warm Sand
+                    'rgba(209, 159, 109, 1)', // Light Bronze
+                    'rgba(255, 223, 0, 1)'     // Pure Yellow Gold
+                ];
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate((this.rotation * Math.PI) / 180);
+                ctx.beginPath();
+                ctx.rect(-this.size / 2, -this.size / 2, this.size, this.size);
+                ctx.fillStyle = this.color.replace(/[^,]+(?=\))/, this.alpha);
+                ctx.fill();
+                ctx.restore();
+            }
+
+            update() {
+                this.speedY += this.gravity;
+                this.x += this.speedX;
+                this.y += this.speedY;
+                this.rotation += this.rotationSpeed;
+                this.alpha -= this.decay;
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            const particleDensity = Math.min(window.innerWidth / 12, 120);
+            for (let i = 0; i < particleDensity; i++) {
+                particles.push(new Star());
+            }
+        }
+
+        function triggerConfettiBurst() {
+            const x = mouse.x || canvas.width / 2;
+            const y = mouse.y || canvas.height / 2 - 100;
+            for (let i = 0; i < 150; i++) {
+                confetti.push(new Confetti(x, y));
+            }
+        }
+
+        // Interactive mouse tap triggers confetti
+        window.addEventListener('click', (e) => {
+            if (e.target.tagName !== 'BUTTON' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'A' && !e.target.closest('button')) {
+                for (let i = 0; i < 25; i++) {
+                    confetti.push(new Confetti(e.clientX, e.clientY));
+                }
+            }
+        });
+
+        // Main animation loop
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Render Stars
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+            }
+
+            // Render Active Confetti
+            for (let i = confetti.length - 1; i >= 0; i--) {
+                confetti[i].update();
+                confetti[i].draw();
+                if (confetti[i].alpha <= 0) {
+                    confetti.splice(i, 1);
+                }
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        // Initialize On Load
+        window.onload = function() {
+            initPersonalization();
+            resizeCanvas();
+            animate();
+            console.log("Celebrating Vijay - 25+ Years of Friendship (मैत्री) with Chimes, Marathi Letter, and Interactive Typing Unlock.");
+        };
+    </script>
+</body>
+</html>
